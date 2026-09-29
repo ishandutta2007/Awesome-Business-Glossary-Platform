@@ -29,6 +29,7 @@ This curated repository tracks leading **SaaS/Hosted Platforms** and active **Op
 - [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 - [📈 Star History](#-star-history)
 
@@ -81,7 +82,17 @@ These open-source platforms provide transparent, self-hosted, and customizable f
 3. ℹ️ Include: platform name, official website/repo link, key pricing/star metrics, and a concise 1–2 sentence description.
 4. 🚀 Submit a Pull Request with a clear explanation of your additions.
 
-⭐ **Star this repository if you find it useful for your data governance journey!**
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and using this curated resource! If you find this list helpful for your data governance strategy, project architecture, or research, please consider supporting the project:
+
+- ⭐ **Star** this repository on GitHub to show your appreciation and boost visibility.
+- 🍴 **Fork** and share it with fellow data stewards, architects, and engineers.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing updates, maintenance, and new open-source resource lists, consider sponsoring via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support is greatly appreciated and helps keep this list active and up-to-date!
 
 ---
 
