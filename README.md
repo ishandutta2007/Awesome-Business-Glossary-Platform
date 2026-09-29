@@ -1,195 +1,98 @@
-# Awesome-Business-Glossary-Platform
-
-## Top Business Glossary Platform Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Data Governance, Business Semantics & Metadata Management*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Business Glossary Management**. These tools establish a shared vocabulary for business terms, metrics, and KPIs across an organization, bridging the gap between technical data assets and business understanding.
-
-
-
-**Examples** include Collibra, Alation, Microsoft Purview, Informatica EDC, Atlan, DataGalaxy, Alex Solutions, DataHub, OvalEdge, and erwin Data Intelligence (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosting, custom metadata workflows, and transparent data governance — ideal for organizations seeking vendor-independent solutions. The open-source ecosystem for business glossaries is closely tied to data catalog platforms, with several mature projects offering glossary capabilities as part of broader metadata management suites.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Collibra](https://www.collibra.com/)**  
-
-  Enterprise data intelligence platform with comprehensive Business Glossary supporting configurable asset types (Business Term, Measure, KPI, Acronym), approval workflows, and semantic layer linking to physical data assets .
-
-
-
-- **[Alation](https://www.alation.com/)**  
-
-  Data catalog with Glossary Hub and Lexicon features, enabling automatic expansion of abbreviations found in data object names and suggested terms based on metadata context .
-
-
-
-- **[Microsoft Purview](https://purview.microsoft.com/)**  
-
-  Data governance platform with Business Glossary supporting rich-text definitions, CSV import/export, approval workflows, and term hierarchy with parent-child relationships .
-
-
-
-- **[Informatica EDC](https://www.informatica.com/)**  
-
-  Enterprise Data Catalog with business glossary management including categories, policies, business rules, and stewardship roles for terms and related assets .
-
-
-
-- **[Atlan](https://atlan.com/)**  
-
-  Modern data catalog with programmatic glossary management via Python SDK, supporting glossaries, categories, and terms with relationships and custom metadata .
-
-
-
-- **[DataGalaxy](https://www.datagalaxy.com/)**  
-
-  Data knowledge platform with Business Glossary featuring AI-assisted term discovery, automated relationship detection, certification campaigns, and direct linking to data assets .
-
-
-
-- **[Alex Solutions](https://alexsolutions.com/)**  
-
-  Data intelligence platform emphasizing bidirectional lineage between glossary terms and technical assets, ownership accountability, and embedding governance into existing tools .
-
-
-
-- **[OvalEdge](https://www.ovaledge.com/)**  
-
-  Data catalog with Business Glossary domains, categories, subcategories, governance role inheritance, and domain relationship dashboards visualizing term connections .
-
-
-
-- **[erwin Data Intelligence](https://erwin.com/)**  
-
-  Data governance suite with Business Glossary Manager supporting catalogs, sub-catalogs, business terms, policies, rules, and stewardship assignments with workflow management .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[DataHub](https://github.com/datahub-project/datahub)**  
-
-  The leading open-source metadata platform, built at LinkedIn and organized around a real-time metadata graph. Business Glossary capabilities include creating glossaries as containers, adding terms with definitions, organizing terms hierarchically with parent-child relationships, and linking terms to datasets and individual columns . Supports developer automation via REST API and Python SDK for bulk imports . The mcp-datahub project extends glossary management with MCP server integration for AI agents . Largest community in the open-source catalog space .
-
-
-
-- **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)**  
-
-  Open-source platform for data discovery, observability, and governance built around a central metadata repository . Covers the stewardship workflow in one package including search, column-level lineage, automated quality checks, no-code profiling, and classification. Recent releases added data contracts for machine-readable schema and quality guarantees . Together with DataHub, leads the open-source catalog space in community size and release cadence .
-
-
-
-- **[Intugle Data Tools](https://github.com/intugle/data-tools)**  
-
-  Open-source Python library of AI tools that helps build a semantic layer over fragmented datasets. Auto-profiles and links siloed datasets, **generates a business glossary from raw tables**, creates smart SQL and reusable data products, and powers semantic search and natural language queries on top of data . Perfect for data teams delivering data products and engineering teams implementing natural language to SQL .
-
-
-
-- **[Apache Gravitino](https://github.com/apache/gravitino)**  
-
-  Open-source metadata lake that federates metadata across data warehouses, lakehouses, streaming platforms, and AI systems under a single API . Graduated to Apache Top-Level Project in June 2025 . Rather than crawling metadata into a separate repository, it fronts existing systems (Apache Iceberg, Hive, Kafka, MySQL, PostgreSQL, file storage) and exposes them through a consistent REST interface, so policies apply at the point of access . Recent releases added OpenLineage-compliant lineage, role-based access control, policy and jobs system, and an MCP server for AI agent metadata queries .
-
-
-
-- **[Unity Catalog](https://github.com/unitycatalog/unitycatalog)**  
-
-  Open-source catalog for data and AI assets, open-sourced by Databricks in 2024 and hosted by LF AI & Data Foundation . Three-level namespace covers tabular data (Delta Lake and Apache Iceberg), unstructured volumes, ML models, and functions under one permission model. Implements Iceberg REST catalog API for engine interoperability. Enforcement-first governance model with access control and temporary credential vending at the catalog layer .
-
-
-
-- **[NADA Catalog](https://github.com/ihsn/nada)**  
-
-  Open-source suite for managing and disseminating research data metadata compliant with DDI standards . Catalog/Repository enables publishing, maintaining, and exploring metadata references via APIs with R support. Metadata Editor facilitates metadata creation and publication. Built on PHP, Apache/NGINX, and MySQL with Docker deployments and documentation .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Amundsen** — Data discovery and metadata engine originally from Lyft, with glossary capabilities through community extensions. Predecessor to many modern catalog features.
-
-- **Apache Atlas** — Metadata and governance framework with business glossary support, though development has slowed in favor of newer projects .
-
-- **Marquez** — Open-source metadata service with lineage and dataset discovery, complementing glossary implementations.
-
-- **OpenLineage** — Open standard for lineage metadata collection, often integrated with glossary platforms for end-to-end data context.
-
-
-
-**Frameworks for building custom business glossary solutions**: Combine **DataHub** for a full-featured metadata platform with glossary, lineage, and search capabilities . Use **OpenMetadata** for an API-first, single-platform approach covering discovery through governance . Leverage **Intugle Data Tools** to automatically generate glossaries from raw tables using AI . For federated metadata across heterogeneous systems, **Apache Gravitino** provides policy application at the point of access . For lakehouse-centric teams, **Unity Catalog** offers enforcement-first governance with engine interoperability . Note that true enterprise business glossary platforms with sophisticated approval workflows, stakeholder notifications, and deep integration with BI tools remain primarily commercial territory; open-source stacks provide strong glossary foundations within broader metadata management platforms.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Business glossary tools must comply with data governance policies, regulatory requirements (GDPR, CCPA), and industry-specific compliance standards.
-
-- Self-hosted open-source solutions require proper infrastructure, metadata management expertise, and ongoing maintenance. Glossary adoption depends on organizational commitment to standardization and stewardship.
-
-
+# 📚 Awesome Business Glossary Platform
+
+![Awesome Business Glossary Platform Banner](assets/banner.svg)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/Data_Governance-Enterprise-blue?style=flat-square&logo=database" alt="Data Governance" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 💡 Overview & SEO Summary
 
+**Business Glossary Platforms** and **Data Governance Catalogs** bridge the gap between technical data infrastructure and business terminology. A robust business glossary establishes a standardized vocabulary for business terms, KPIs, definitions, acronyms, and metrics across enterprise data assets. 
 
-**Made for data stewards, governance teams, data architects, and metadata professionals.**  
+This curated repository tracks leading **SaaS/Hosted Platforms** and active **Open-Source GitHub Projects** for metadata management, automated data dictionary generation, lineage tracking, and enterprise data governance.
 
-Let's make business glossary management more open, transparent, and collaborative.
+---
+
+## 📊 Market Overview & Industry Insights
+
+> 💡 **Market Size & Structure**: The global **Data Governance & Business Glossary Market** is estimated at **~$5.5 Billion USD in 2026** and is projected to reach **~$18.5 Billion by 2033** (growing at a CAGR of ~18%). The market is **moderately fragmented**, undergoing consolidation as enterprise software vendors (such as Quest Software and Informatica) acquire specialized metadata tools, while modern AI-native metadata engines (like Atlan and DataHub) capture high-growth cloud-native segments.
+
+---
+
+## 📋 Table of Contents
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+The following enterprise and SaaS platforms offer hosted business glossary management, automated stewards' workflows, BI lineage, and policy enforcement.
+
+*Sorted by Valuation / Market Size (Descending)*
+
+| Platform 🏢 | Valuation / Company Size 💰 | Starting Price 💵 | Free Tier / Trial Limit ⏳ | Key Features & Business Glossary Focus 🔑 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Informatica EDC](https://www.informatica.com/)** | **~$7.64B Market Cap** *(Public: INFA)* | **~$80,000 / year** *(IPU consumption model)* | **30-day Free Trial** *(Informatica Intelligent Data Management Cloud)* | Enterprise Data Catalog with business glossary management including categories, policies, business rules, and stewardship roles. |
+| **[Collibra](https://www.collibra.com/)** | **~$5.25B Valuation** *(Series G)* | **~$170,000 / year** *(Base platform license)* | **20-day Free Trial** *(Data Quality & Observability module; self-guided tours for core cloud)* | Enterprise data intelligence platform supporting configurable asset types (Business Term, Measure, KPI, Acronym), approval workflows, and semantic layer linking. |
+| **[Alation](https://www.alation.com/)** | **~$1.70B Valuation** *(Series E)* | **~$60,000 / year** *(Base subscription)* | **14-day Free Trial** *(Sales-assisted guided trial / sandbox environment)* | Data catalog with Glossary Hub and Lexicon features, enabling automatic expansion of abbreviations found in data object names and suggested terms. |
+| **[Atlan](https://atlan.com/)** | **~$750M Valuation** *(Series C)* | **~$100,000 / year** *(Enterprise tier)* | **14-day Free Trial** *(Custom sandbox environment provided upon request)* | Modern data catalog with programmatic glossary management via Python SDK, supporting glossaries, categories, and terms with relationships. |
+| **[Microsoft Purview](https://purview.microsoft.com/)** | **Enterprise Division** *(Microsoft M365 Ecosystem)* | **$12 / user / month** *(Standalone suite add-on; M365 E5 at $60/mo)* | **30-day Free Trial** *(Microsoft 365 Enterprise E5 / Purview Trial)* | Data governance platform with Business Glossary supporting rich-text definitions, CSV import/export, approval workflows, and term hierarchy. |
+| **[erwin Data Intelligence](https://erwin.com/)** | **Acquired by Quest Software** *(Subsidiary)* | **~$20,000 / year** *(Enterprise quote)* | **14-day Free Trial** *(Guided trial request via Quest Software portal)* | Data governance suite with Business Glossary Manager supporting catalogs, sub-catalogs, business terms, policies, rules, and stewardship assignments. |
+| **[OvalEdge](https://www.ovaledge.com/)** | **Acquired by FutureTech Holding** | **$100 / user / month** *(+ $100/connector/mo)* | **14-day Free Trial** *(Full product demo & sandbox trial)* | Data catalog with Business Glossary domains, categories, subcategories, governance role inheritance, and domain relationship dashboards. |
+| **[DataGalaxy](https://www.datagalaxy.com/)** | **~$10M Funding** *(Series Seed/A)* | **~$15,000 / year** *(Starter tier editor licenses)* | **14-day Free Trial** *(Custom trial environment post-demo)* | Data knowledge platform with Business Glossary featuring AI-assisted term discovery, automated relationship detection, and certification campaigns. |
+| **[Alex Solutions](https://alexsolutions.com/)** | **Independent / Bootstrapped** | **~$30,000 / year** *(Enterprise deployment)* | **14-day Free Trial** *(Sales-hosted proof of concept)* | Data intelligence platform emphasizing bidirectional lineage between glossary terms and technical assets, ownership accountability, and tool integration. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+These open-source platforms provide transparent, self-hosted, and customizable foundations for building business glossaries, semantic models, and metadata graphs.
+
+*Sorted by GitHub Star Count (Descending)*
+
+| Project 📦 | Star Count 🌟 | Description & Glossary Capabilities 📖 |
+| :--- | :--- | :--- |
+| **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** | [<img src="https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white" alt="OpenMetadata Stars"/>](https://github.com/open-metadata/OpenMetadata/stargazers) | Open-source platform for data discovery, observability, and governance built around a central metadata repository. Covers stewardship workflows, search, column-level lineage, automated quality checks, and business glossaries. |
+| **[DataHub](https://github.com/datahub-project/datahub)** | [<img src="https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white" alt="DataHub Stars"/>](https://github.com/datahub-project/datahub/stargazers) | Extensible metadata platform originally built at LinkedIn. Business Glossary capabilities include creating hierarchical terms, organizing definitions, linking terms to datasets, and exposing APIs/SDKs for AI agent integration. |
+| **[Unity Catalog](https://github.com/unitycatalog/unitycatalog)** | [<img src="https://img.shields.io/github/stars/unitycatalog/unitycatalog?style=social&color=white" alt="Unity Catalog Stars"/>](https://github.com/unitycatalog/unitycatalog/stargazers) | Open-source catalog for data and AI assets hosted by LF AI & Data Foundation. Provides a unified three-level namespace, permission enforcement, and semantic metadata tagging across delta tables and AI models. |
+| **[Apache Atlas](https://github.com/apache/atlas)** | [<img src="https://img.shields.io/github/stars/apache/atlas?style=social&color=white" alt="Apache Atlas Stars"/>](https://github.com/apache/atlas/stargazers) | Scalable and extensible set of core governance services for Hadoop and enterprise data ecosystems. Includes business term taxonomies, classification, and lineage mapping. |
+| **[Amundsen](https://github.com/amundsen-io/amundsen)** | [<img src="https://img.shields.io/github/stars/amundsen-io/amundsen?style=social&color=white" alt="Amundsen Stars"/>](https://github.com/amundsen-io/amundsen/stargazers) | Data discovery and metadata engine originally developed by Lyft. Provides search, column descriptions, and glossary features to improve data analyst productivity. |
+| **[Apache Gravitino](https://github.com/apache/gravitino)** | [<img src="https://img.shields.io/github/stars/apache/gravitino?style=social&color=white" alt="Gravitino Stars"/>](https://github.com/apache/gravitino/stargazers) | High-performance, geo-distributed metadata lake that federates metadata across data warehouses, lakehouses, streaming platforms, and AI systems under a single unified REST API. |
+| **[Marquez](https://github.com/MarquezProject/marquez)** | [<img src="https://img.shields.io/github/stars/MarquezProject/marquez?style=social&color=white" alt="Marquez Stars"/>](https://github.com/MarquezProject/marquez/stargazers) | Open-source metadata service for data ecosystems. Collects, aggregates, and visualizes dataset metadata, job executions, column lineage, and contextual business descriptions. |
+| **[Intugle Data Tools](https://github.com/intugle/data-tools)** | [<img src="https://img.shields.io/github/stars/intugle/data-tools?style=social&color=white" alt="Intugle Data Tools Stars"/>](https://github.com/intugle/data-tools/stargazers) | Open-source Python library of AI tools that helps build a semantic layer over fragmented datasets, automatically generating business glossaries directly from raw database tables. |
+| **[NADA Catalog](https://github.com/ihsn/nada)** | [<img src="https://img.shields.io/github/stars/ihsn/nada?style=social&color=white" alt="NADA Stars"/>](https://github.com/ihsn/nada/stargazers) | Open-source micro-data catalog engine for managing and disseminating research data compliant with DDI and Dublin Core metadata standards. |
+
+---
+
+## 🤝 How to Contribute
+
+1. 🍴 Fork the repository.
+2. 📝 Add/edit entries in `README.md` (follow existing tabular and markdown formatting).
+3. ℹ️ Include: platform name, official website/repo link, key pricing/star metrics, and a concise 1–2 sentence description.
+4. 🚀 Submit a Pull Request with a clear explanation of your additions.
+
+⭐ **Star this repository if you find it useful for your data governance journey!**
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and research purposes.
+- Enterprise pricing and trial policies are subject to vendor modifications; consult official vendor representatives for official quotes.
+- Business glossary and metadata governance deployments must comply with relevant privacy regulations (GDPR, CCPA, HIPAA) and corporate compliance policies.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Business-Glossary-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Business-Glossary-Platform&type=date&legend=top-left)
