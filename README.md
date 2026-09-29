@@ -59,9 +59,9 @@ The following enterprise and SaaS platforms offer hosted business glossary manag
 
 These open-source platforms provide transparent, self-hosted, and customizable foundations for building business glossaries, semantic models, and metadata graphs.
 
-*Sorted by GitHub Star Count (Descending)*
+*Sorted by GitHub Stars_Count (Descending)*
 
-| Project 📦 | Star Count 🌟 | Description & Glossary Capabilities 📖 |
+| Project 📦 | Stars_Count 🌟 | Description & Glossary Capabilities 📖 |
 | :--- | :--- | :--- |
 | **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** | [<img src="https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white" alt="OpenMetadata Stars"/>](https://github.com/open-metadata/OpenMetadata/stargazers) | Open-source platform for data discovery, observability, and governance built around a central metadata repository. Covers stewardship workflows, search, column-level lineage, automated quality checks, and business glossaries. |
 | **[DataHub](https://github.com/datahub-project/datahub)** | [<img src="https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white" alt="DataHub Stars"/>](https://github.com/datahub-project/datahub/stargazers) | Extensible metadata platform originally built at LinkedIn. Business Glossary capabilities include creating hierarchical terms, organizing definitions, linking terms to datasets, and exposing APIs/SDKs for AI agent integration. |
@@ -107,3 +107,12 @@ Your support is greatly appreciated and helps keep this list active and up-to-da
 ## 📈 Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Business-Glossary-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Business-Glossary-Platform&type=date&legend=top-left)
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Business-Glossary-Platform&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Business-Glossary-Platform_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Business-Glossary-Platform_growth.svg">
+  </picture>
+</a>
